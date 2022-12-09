@@ -1,0 +1,13 @@
+package com.example.rpccore.loadBalancer;
+
+import com.alibaba.nacos.api.naming.pojo.Instance;
+
+import java.util.List;
+
+/**
+ * @author yao 2022/12/9
+ */
+public interface LoadBalancer {
+    Instance select(List<Instance> instances);
+
+}
